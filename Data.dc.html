@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#07070a;font-family:'Figtree',sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  @keyframes dvtwinkle{0%,100%{opacity:.15}50%{opacity:.95}}
+</style>
+</helmet>
+
+<div style="color:#f2ede3;position:relative">
+  <div data-stars style="position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden"></div>
+
+  <!-- ================= STICKY NAV ================= -->
+  <nav style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:15px 40px;background:rgba(7,7,10,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)">
+    <a href="index.html" style="display:flex;flex-direction:column;line-height:1">
+      <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#f7f2e8">geomorph<span style="color:#e6a94a">@</span>Brown</span>
+      <span style="font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:#c9b89b;margin-top:4px">The SAMLAB</span>
+    </a>
+    <div style="display:flex;gap:22px;font-size:13px;font-weight:500;color:#c8bfae">
+      <a href="index.html" style="transition:color .2s" style-hover="color:#fff">Home</a>
+      <a href="Team.dc.html" style="transition:color .2s" style-hover="color:#fff">Team</a>
+      <a href="Research.dc.html" style="transition:color .2s" style-hover="color:#fff">Research</a>
+      <a href="Publications.dc.html" style="transition:color .2s" style-hover="color:#fff">Publications</a>
+      <a href="Missions.dc.html" style="transition:color .2s" style-hover="color:#fff">Mission Support</a>
+      <a href="Data.dc.html" style="color:#e6a94a">Data &amp; Code</a>
+      <a href="Media.dc.html" style="transition:color .2s" style-hover="color:#fff">Media</a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header style="position:relative;overflow:hidden;padding:clamp(90px,13vw,150px) 40px clamp(20px,3vw,40px);text-align:center">
+    <h1 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(40px,6vw,72px);line-height:1.03;margin:0 0 22px;color:#f9f4ea">Open tools for the <span style="font-style:italic;color:#e6a94a">community</span></h1>
+    <p style="font-size:clamp(16px,1.6vw,19px);line-height:1.65;color:#a49e91;margin:0 auto;max-width:42rem">We generate a lot of data and code, and we want others to enjoy them too. Here's what's freely available — forever a work in progress.</p>
+  </header>
+
+  <!-- ================= COMET.PHOTOS (featured) ================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,50px) 40px 20px">
+    <div data-reveal style="display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,56px);align-items:center;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:26px;padding:clamp(24px,3vw,40px)">
+      <div style="flex:1 1 320px;min-width:260px">
+        <a href="https://comet.photos" target="_blank" rel="noopener"><img src="assets/comet-photos-thumb.png" alt="Comet 67P" loading="lazy" style="width:100%;border-radius:16px;display:block;box-shadow:0 20px 50px rgba(0,0,0,.5)"></a>
+      </div>
+      <div style="flex:1 1 340px;min-width:280px">
+        <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#5cbb81;font-weight:700;margin-bottom:12px">Interactive tool</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(30px,3.4vw,44px);margin:0 0 14px;color:#f2ede3">Comet.Photos</h2>
+        <p style="font-size:15.5px;line-height:1.7;color:#a49e91;margin:0 0 18px">Select any region on comet 67P's complex shape and view every OSIRIS NAC, WAC, and NAVCAM image Rosetta took of it. Set resolution and imaging-geometry preferences, then download your selection. Or stay in the browser and watch your region evolve! It now includes other small bodies too — Ryugu (Hayabusa2) and Bennu (OSIRIS-REx).</p>
+        <p style="font-size:13px;line-height:1.6;color:#7a7365;margin:0 0 22px">Built largely by Daniel Kurlander (then an MIT undergraduate), with guidance from Abhinav Jindal, Jason Soderblom, and Sam Birch.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a href="https://comet.photos" target="_blank" rel="noopener" style="display:inline-block;font-size:13.5px;font-weight:700;padding:11px 22px;background:#e6a94a;color:#211b14;border-radius:3px;transition:transform .2s" style-hover="transform:translateY(-2px)">Launch Comet.Photos ↗</a>
+          <a href="https://github.com/comet-dot-photos/comet-dot-photos" target="_blank" rel="noopener" style="display:inline-block;font-size:13.5px;padding:11px 20px;border:1px solid rgba(255,255,255,.2);border-radius:3px;color:#d3ccbe;transition:border-color .2s,color .2s" style-hover="border-color:#e6a94a;color:#fff">Source code ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GITHUB REPOS ================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,50px) 40px 10px">
+    <div data-reveal style="text-align:center;margin-bottom:12px"><span style="font-family:'Newsreader',serif;font-size:clamp(22px,2.6vw,30px);color:#e6a94a">GitHub Repositories</span><div style="font-size:14px;color:#8a8172;margin-top:8px">Code behind our papers — a perpetual work in progress.</div></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:900px;margin:24px auto 0">
+      <a data-reveal href="https://github.com/sambirch-brown" target="_blank" rel="noopener" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(230,169,74,.5)"><div style="font-family:'Newsreader',serif;font-size:20px;color:#f2ede3;margin-bottom:4px">Sam</div><div style="font-size:12.5px;color:#8a8172">github.com/sambirch-brown ↗</div></a>
+      <a data-reveal href="https://github.com/abhinav-s-jindal" target="_blank" rel="noopener" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(230,169,74,.5)"><div style="font-family:'Newsreader',serif;font-size:20px;color:#f2ede3;margin-bottom:4px">Abhinav</div><div style="font-size:12.5px;color:#8a8172">github.com/abhinav-s-jindal ↗</div></a>
+      <a data-reveal href="https://github.com/julia-w-miller" target="_blank" rel="noopener" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(230,169,74,.5)"><div style="font-family:'Newsreader',serif;font-size:20px;color:#f2ede3;margin-bottom:4px">Julia</div><div style="font-size:12.5px;color:#8a8172">github.com/julia-w-miller ↗</div></a>
+      <a data-reveal href="https://github.com/Anthony-Merchan" target="_blank" rel="noopener" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(230,169,74,.5)"><div style="font-family:'Newsreader',serif;font-size:20px;color:#f2ede3;margin-bottom:4px">Anthony</div><div style="font-size:12.5px;color:#8a8172">github.com/Anthony-Merchan ↗</div></a>
+      <a data-reveal href="https://github.com/lexkschultz" target="_blank" rel="noopener" style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(230,169,74,.5)"><div style="font-family:'Newsreader',serif;font-size:20px;color:#f2ede3;margin-bottom:4px">Lex</div><div style="font-size:12.5px;color:#8a8172">github.com/lexkschultz ↗</div></a>
+    </div>
+  </section>
+
+  <!-- ================= DATA REPOSITORIES ================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,50px) 40px clamp(60px,7vw,90px)">
+    <div data-reveal style="text-align:center;margin-bottom:12px"><span style="font-family:'Newsreader',serif;font-size:clamp(22px,2.6vw,30px);color:#5cbb81">Data Repositories</span><div style="font-size:14px;color:#8a8172;margin-top:8px">Datasets behind our papers, archived on Zenodo.</div></div>
+    <div style="display:flex;justify-content:center;margin:24px auto 0;max-width:900px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px;width:100%">
+        <a data-reveal href="https://zenodo.org/records/17574889" target="_blank" rel="noopener" style="flex:0 0 220px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(92,187,129,.5)"><div style="font-family:'Newsreader',serif;font-size:20px;color:#f2ede3;margin-bottom:4px">Jindal et al. 2026 (Icarus)</div><div style="font-size:12.5px;color:#8a8172">zenodo.org/records/17574889 ↗</div></a>
+        <a data-reveal href="https://zenodo.org/records/15793846" target="_blank" rel="noopener" style="flex:0 0 220px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(92,187,129,.5)"><div style="font-family:'Newsreader',serif;font-size:20px;color:#f2ede3;margin-bottom:4px">Miller et al. 2025 (JGR-Planets)</div><div style="font-size:12.5px;color:#8a8172">zenodo.org/records/15793846 ↗</div></a>
+        <a data-reveal href="https://zenodo.org/records/14872880" target="_blank" rel="noopener" style="flex:0 0 220px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(92,187,129,.5)"><div style="font-family:'Newsreader',serif;font-size:20px;color:#f2ede3;margin-bottom:4px">Birch et al. 2023 (PNAS)</div><div style="font-size:12.5px;color:#8a8172">zenodo.org/records/14872880 ↗</div></a>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="background:#050506;color:#c8bfae;padding:54px 40px 40px;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;line-height:1">
+        <span style="font-family:'Newsreader',serif;font-size:23px;color:#f7f2e8">geomorph@Brown</span>
+        <span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#8a8172;margin-top:7px">The SAMLAB</span>
+        <span style="font-size:13px;color:#8a8172;margin-top:18px;max-width:24rem;line-height:1.6">Dept. of Earth, Environmental &amp; Planetary Sciences<br>Brown University · Providence, RI</span>
+      </div>
+      <div style="display:flex;gap:60px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f6653;margin-bottom:4px">Explore</span>
+          <a href="Research.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Research</a>
+          <a href="Publications.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Publications</a>
+          <a href="Missions.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Mission Support</a>
+          <a href="Data.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Data &amp; Code</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f6653;margin-bottom:4px">More</span>
+          <a href="Team.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Our Team</a>
+          <a href="Media.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Media</a>
+          <a href="https://scholar.google.com/citations?hl=en&amp;view_op=list_works&amp;gmla=AOv-ny-dkiCg-0fwuEZHpTbY7lLzyBVX9015tVyl4bmSh2BSZbxY0FMsXRX_OXPCNogkOBVWGHl8ycomfGSccnQ-nI9CcRXvX_0u9KiE9XYp&amp;user=Ly6Ak6oAAAAJ" target="_blank" rel="noopener" style="transition:color .2s" style-hover="color:#e6a94a">Google Scholar</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:38px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:#6f6653">© <span data-year>2026</span> The SAMLAB · geomorph@Brown</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ this._raf = requestAnimationFrame(() => this._init()); }
+  componentWillUnmount(){ if (this._ro) this._ro.disconnect(); if (this._raf) cancelAnimationFrame(this._raf); }
+  _init(){
+    if (this._done) return; this._done = true;
+    const yr = document.querySelector('[data-year]'); if (yr) yr.textContent = new Date().getFullYear();
+    this._makeStars();
+    const reveals = [...document.querySelectorAll('[data-reveal]')];
+    reveals.forEach((el) => { el.style.opacity = '0'; el.style.transform = 'translateY(26px)'; el.style.transition = 'opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)'; });
+    this._ro = new IntersectionObserver((es) => {
+      es.forEach((e) => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'none'; this._ro.unobserve(e.target); } });
+    }, { root: null, rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    reveals.forEach((el) => this._ro.observe(el));
+  }
+  _makeStars(){
+    const cs=[...document.querySelectorAll('[data-stars]')];
+    cs.forEach((c)=>{
+      const r=c.getBoundingClientRect();
+      const n=Math.min(170,Math.max(50,Math.round((r.width*r.height)/9000)));
+      let h='';
+      for(let i=0;i<n;i++){
+        const s=(Math.random()*2+1).toFixed(1);
+        h+='<span style="position:absolute;left:'+(Math.random()*100).toFixed(2)+'%;top:'+(Math.random()*100).toFixed(2)+'%;width:'+s+'px;height:'+s+'px;border-radius:50%;background:#fff;opacity:0;animation:dvtwinkle '+(Math.random()*5+3).toFixed(2)+'s ease-in-out '+(Math.random()*7).toFixed(2)+'s infinite"></span>';
+      }
+      c.innerHTML=h;
+    });
+  }
+  renderVals(){ return {}; }
+}
+</script>
+</body>
+</html>

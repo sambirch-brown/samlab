@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#07070a;font-family:'Figtree',sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  @keyframes dvtwinkle{0%,100%{opacity:.15}50%{opacity:.95}}
+</style>
+</helmet>
+
+<div style="color:#f2ede3;position:relative">
+  <div data-stars style="position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden"></div>
+
+  <!-- ================= STICKY NAV ================= -->
+  <nav style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:15px 40px;background:rgba(7,7,10,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)">
+    <a href="index.html" style="display:flex;flex-direction:column;line-height:1">
+      <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#f7f2e8">geomorph<span style="color:#e6a94a">@</span>Brown</span>
+      <span style="font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:#c9b89b;margin-top:4px">The SAMLAB</span>
+    </a>
+    <div style="display:flex;gap:22px;font-size:13px;font-weight:500;color:#c8bfae">
+      <a href="index.html" style="transition:color .2s" style-hover="color:#fff">Home</a>
+      <a href="Team.dc.html" style="transition:color .2s" style-hover="color:#fff">Team</a>
+      <a href="Research.dc.html" style="transition:color .2s" style-hover="color:#fff">Research</a>
+      <a href="Publications.dc.html" style="transition:color .2s" style-hover="color:#fff">Publications</a>
+      <a href="Missions.dc.html" style="transition:color .2s" style-hover="color:#fff">Mission Support</a>
+      <a href="Data.dc.html" style="transition:color .2s" style-hover="color:#fff">Data &amp; Code</a>
+      <a href="Media.dc.html" style="color:#e6a94a">Media</a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header style="position:relative;overflow:hidden;padding:clamp(90px,13vw,150px) 40px clamp(20px,3vw,40px);text-align:center">
+    <h1 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(40px,6vw,72px);line-height:1.03;margin:0 0 22px;color:#f9f4ea">We do <span style="font-style:italic;color:#e6a94a">a lot more</span> than just write papers</h1>
+    <p style="font-size:clamp(16px,1.6vw,19px);line-height:1.7;color:#a49e91;margin:0 auto;max-width:54rem">Check out some of the interviews we have given, presentations we have shared at conferences, or some more light-hearted activities we like to share with each other.</p>
+  </header>
+
+  <!-- ================= INTERVIEWS & PODCASTS ================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,54px) 40px 10px">
+    <div data-reveal style="text-align:center;margin-bottom:34px">
+      <span style="font-family:'Newsreader',serif;font-size:clamp(24px,3vw,38px);color:#e6a94a">Interviews &amp; podcasts</span>
+      <div style="font-size:14.5px;color:#8a8172;margin-top:8px">Where you can hear us talk Titan, comets, and the rest.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px">
+      <a data-reveal href="https://www.youtube.com/watch?v=od_raZMJG84&amp;list=PLw6IJozmaWbTt2pRHTFS6ySZmSr97-Wcd&amp;index=2" target="_blank" rel="noopener" style="display:flex;flex-direction:column;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(230,169,74,.5)">
+        <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#5cbb81;font-weight:700;margin-bottom:12px">SETI Live &middot; May 2025</div>
+        <div style="font-family:'Newsreader',serif;font-size:21px;line-height:1.25;color:#f2ede3;margin-bottom:12px">Talking Titan on the SETI Institute's live show</div>
+        <div style="font-size:13.5px;color:#e6a94a;margin-top:auto">Watch &rarr;</div>
+      </a>
+      <a data-reveal href="https://www.patreon.com/posts/125246921" target="_blank" rel="noopener" style="display:flex;flex-direction:column;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(230,169,74,.5)">
+        <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#5cbb81;font-weight:700;margin-bottom:12px">Universe Today &middot; March 2025</div>
+        <div style="font-family:'Newsreader',serif;font-size:21px;line-height:1.25;color:#f2ede3;margin-bottom:12px">A deep dive into Titan with Fraser Cain</div>
+        <div style="font-size:13.5px;color:#e6a94a;margin-top:auto">Listen &rarr;</div>
+      </a>
+      <a data-reveal href="https://www.planetary.org/planetary-radio/2023-rivers-of-earth-mars-and-titan" target="_blank" rel="noopener" style="display:flex;flex-direction:column;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-3px);border-color:rgba(230,169,74,.5)">
+        <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#5cbb81;font-weight:700;margin-bottom:12px">Planetary Radio &middot; July 2023</div>
+        <div style="font-family:'Newsreader',serif;font-size:21px;line-height:1.25;color:#f2ede3;margin-bottom:12px">Rivers of Earth, Mars, and Titan, with Sarah Al-Ahmed</div>
+        <div style="font-size:13.5px;color:#e6a94a;margin-top:auto">Listen &rarr;</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= ON THE ROAD (conferences) ================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px 10px">
+    <div data-reveal style="text-align:center;margin-bottom:34px">
+      <span style="font-family:'Newsreader',serif;font-size:clamp(24px,3vw,38px);color:#5cbb81">Presentations at Conferences</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;max-width:1180px;margin:0 auto">
+      <figure data-reveal style="margin:0"><div style="position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)"><img src="{{ deepsSrc }}" alt="DEEPS Dive 2026" loading="lazy" onClick="{{ deepsOpen }}" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in"><button onClick="{{ deepsPrev }}" aria-label="Previous" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">←</button><button onClick="{{ deepsNext }}" aria-label="Next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">→</button></div><figcaption style="font-size:13px;color:#8a8172;margin-top:10px;line-height:1.5">{{ deepsCaption }}</figcaption></figure>
+      <figure data-reveal style="margin:0"><div style="position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)"><img src="{{ epscSrc }}" alt="EPSC-DPS 2025" loading="lazy" onClick="{{ epscOpen }}" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in"><button onClick="{{ epscPrev }}" aria-label="Previous" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">←</button><button onClick="{{ epscNext }}" aria-label="Next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">→</button></div><figcaption style="font-size:13px;color:#8a8172;margin-top:10px;line-height:1.5">{{ epscCaption }}</figcaption></figure>
+      <figure data-reveal style="margin:0"><div style="position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)"><img src="{{ sympSrc }}" alt="Brown Undergrad Research Symposium 2025" loading="lazy" onClick="{{ sympOpen }}" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in"><button onClick="{{ sympPrev }}" aria-label="Previous" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">←</button><button onClick="{{ sympNext }}" aria-label="Next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">→</button></div><figcaption style="font-size:13px;color:#8a8172;margin-top:10px;line-height:1.5">{{ sympCaption }}</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ================= OFF THE CLOCK (fun) ================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px clamp(60px,7vw,90px)">
+    <div data-reveal style="text-align:center;margin-bottom:34px">
+      <span style="font-family:'Newsreader',serif;font-size:clamp(24px,3vw,38px);color:#e6a94a">Off the clock</span>
+      <div style="font-size:14.5px;color:#8a8172;margin-top:8px">Because it's not all work, work, work, work, work.</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+<figure data-reveal style="margin:0"><div style="position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)"><img src="{{ bernSrc }}" alt="Bern and Poland trip" loading="lazy" onClick="{{ bernOpen }}" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in"><button onClick="{{ bernPrev }}" aria-label="Previous" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">←</button><button onClick="{{ bernNext }}" aria-label="Next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">→</button></div><figcaption style="font-size:13px;color:#8a8172;margin-top:10px;line-height:1.5">Abhinav, Jason Soderblom, and Sam visiting Raphael in Bern and attending ACM in Poland in 2026</figcaption></figure>
+      <figure data-reveal style="margin:0"><div style="aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)"><img src="assets/fun-1.jpg" alt="Lab happy hour" loading="lazy" onClick="{{ fun1Open }}" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in"></div><figcaption style="font-size:13px;color:#8a8172;margin-top:10px;line-height:1.5">Happy hour at Narragansett brewery</figcaption></figure>
+      <figure data-reveal style="margin:0"><div style="position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)"><img src="{{ mollkySrc }}" alt="Lawn game (Mölkky)" loading="lazy" onClick="{{ mollkyOpen }}" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in"><button onClick="{{ mollkyPrev }}" aria-label="Previous" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">←</button><button onClick="{{ mollkyNext }}" aria-label="Next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">→</button></div><figcaption style="font-size:13px;color:#8a8172;margin-top:10px;line-height:1.5">Lunch-time square Mölkky</figcaption></figure>
+      <figure data-reveal style="margin:0"><div style="position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)"><img src="{{ issiSrc }}" alt="ISSI team meeting" loading="lazy" onClick="{{ issiOpen }}" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in"><button onClick="{{ issiPrev }}" aria-label="Previous" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">←</button><button onClick="{{ issiNext }}" aria-label="Next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">→</button></div><figcaption style="font-size:13px;color:#8a8172;margin-top:10px;line-height:1.5">Julia, Abhinav, and Sam at an ISSI team meeting in 2025</figcaption></figure>
+      <figure data-reveal style="margin:0"><div style="position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.4)"><img src="{{ niceSrc }}" alt="At the observatory in Nice" loading="lazy" onClick="{{ niceOpen }}" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in"><button onClick="{{ nicePrev }}" aria-label="Previous" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">←</button><button onClick="{{ niceNext }}" aria-label="Next" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(7,7,10,.55);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center">→</button></div><figcaption style="font-size:13px;color:#8a8172;margin-top:10px;line-height:1.5">Abhinav and Sam worked with Nick Attree and Raphael Marschall at the observatory in Nice in 2025</figcaption></figure>
+    </div>
+  </section>
+
+  <div onClick="{{ closeLightbox }}" style="{{ lightboxOverlayStyle }}">
+    <img src="{{ lightboxSrc }}" alt="" style="max-width:92vw;max-height:88vh;object-fit:contain;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.7)">
+    <sc-if value="{{ lightboxShowArrows }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ lightboxPrev }}" aria-label="Previous" style="position:absolute;left:24px;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center">←</button>
+      <button onClick="{{ lightboxNext }}" aria-label="Next" style="position:absolute;right:24px;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center">→</button>
+    </sc-if>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="background:#050506;color:#c8bfae;padding:54px 40px 40px;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;line-height:1">
+        <span style="font-family:'Newsreader',serif;font-size:23px;color:#f7f2e8">geomorph@Brown</span>
+        <span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#8a8172;margin-top:7px">The SAMLAB</span>
+        <span style="font-size:13px;color:#8a8172;margin-top:18px;max-width:24rem;line-height:1.6">Dept. of Earth, Environmental &amp; Planetary Sciences<br>Brown University &middot; Providence, RI</span>
+      </div>
+      <div style="display:flex;gap:60px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f6653;margin-bottom:4px">Explore</span>
+          <a href="Research.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Research</a>
+          <a href="Publications.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Publications</a>
+          <a href="Missions.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Mission Support</a>
+          <a href="Data.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Data &amp; Code</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f6653;margin-bottom:4px">More</span>
+          <a href="Team.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Our Team</a>
+          <a href="Media.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Media</a>
+          <a href="https://scholar.google.com/citations?hl=en&amp;view_op=list_works&amp;gmla=AOv-ny-dkiCg-0fwuEZHpTbY7lLzyBVX9015tVyl4bmSh2BSZbxY0FMsXRX_OXPCNogkOBVWGHl8ycomfGSccnQ-nI9CcRXvX_0u9KiE9XYp&amp;user=Ly6Ak6oAAAAJ" target="_blank" rel="noopener" style="transition:color .2s" style-hover="color:#e6a94a">Google Scholar</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:38px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:#6f6653">&copy; <span data-year>2026</span> The SAMLAB &middot; geomorph@Brown</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ this._raf = requestAnimationFrame(() => this._init()); }
+  componentWillUnmount(){ if (this._ro) this._ro.disconnect(); if (this._raf) cancelAnimationFrame(this._raf); }
+  _init(){
+    if (this._done) return; this._done = true;
+    const yr = document.querySelector('[data-year]'); if (yr) yr.textContent = new Date().getFullYear();
+    this._makeStars();
+    const reveals = [...document.querySelectorAll('[data-reveal]')];
+    reveals.forEach((el) => { el.style.opacity = '0'; el.style.transform = 'translateY(26px)'; el.style.transition = 'opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)'; });
+    this._ro = new IntersectionObserver((es) => {
+      es.forEach((e) => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'none'; this._ro.unobserve(e.target); } });
+    }, { root: null, rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    reveals.forEach((el) => this._ro.observe(el));
+  }
+  _makeStars(){
+    const cs=[...document.querySelectorAll('[data-stars]')];
+    cs.forEach((c)=>{
+      const r=c.getBoundingClientRect();
+      const n=Math.min(170,Math.max(50,Math.round((r.width*r.height)/9000)));
+      let h='';
+      for(let i=0;i<n;i++){
+        const s=(Math.random()*2+1).toFixed(1);
+        h+='<span style="position:absolute;left:'+(Math.random()*100).toFixed(2)+'%;top:'+(Math.random()*100).toFixed(2)+'%;width:'+s+'px;height:'+s+'px;border-radius:50%;background:#fff;opacity:0;animation:dvtwinkle '+(Math.random()*5+3).toFixed(2)+'s ease-in-out '+(Math.random()*7).toFixed(2)+'s infinite"></span>';
+      }
+      c.innerHTML=h;
+    });
+  }
+  renderVals(){
+    const imgs=['assets/fun-2.jpg','assets/fun-3.jpg','assets/fun-4.jpg','assets/fun-5.jpg'];
+    const idx=this.state.mollkyIdx||0;
+    const issiImgs=['assets/fun-6.png','assets/fun-7.png'];
+    const issiIdx=this.state.issiIdx||0;
+    const niceImgs=['assets/fun-8.png','assets/fun-9.png','assets/fun-10.png'];
+    const niceIdx=this.state.niceIdx||0;
+    const epscImgs=['assets/conf-2.jpeg','assets/conf-julia.png','assets/conf-4.jpeg'];
+    const epscCaps=['Abhinav at his poster — EPSC–DPS 2025, Helsinki','Julia shares her poster with Nick Attree — EPSC–DPS 2025, Helsinki','Matt gives a talk on cometary outbursts – EPSC-DPS 2025'];
+    const epscIdx=this.state.epscIdx||0;
+    const sympImgs=['assets/conf-1.jpg','assets/conf-3.jpg','assets/conf-6.png'];
+    const sympCaps=["Matt talks through his poster on comet outbursts with Jung-Eun – Brown Undergrad Research Symposium 2025","Shayna's poster on river–dune interactions in the Namib — Brown Undergrad Research Symposium 2025","Akemi's poster on Comet 67P's northern-hemisphere dust deposits — Brown Undergrad Research Symposium 2025"];
+    const sympIdx=this.state.sympIdx||0;
+    const deepsImgs=['assets/deeps-julia.jpg','assets/deeps-anthony.jpg','assets/deeps-abhinav.jpg','assets/deeps-eads.jpg','assets/deeps-matt.jpg','assets/deeps-ceci.jpg','assets/deeps-lex.jpg','assets/deeps-brianna.jpg','assets/deeps-sara.jpg'];
+    const deepsCaps=['Julia Miller - DEEPS Dive 2026','Anthony Merchan - DEEPS Dive 2026','Abhinav Jindal - DEEPS Dive 2026','Eads Fouché - DEEPS Dive 2026','Matt Moser - DEEPS Dive 2026',"Ceci D'Hondt-Gorbea - DEEPS Dive 2026",'Lex Schultz - DEEPS Dive 2026','Brianna Fernandez - DEEPS Dive 2026','Sara Cuevas Quiñones - DEEPS Dive 2026'];
+    const deepsIdx=this.state.deepsIdx||0;
+    const bernImgs=['assets/bern-1.jpeg','assets/bern-2.jpeg','assets/bern-3.jpeg'];
+    const bernIdx=this.state.bernIdx||0;
+    const sets={mollky:{imgs,idx},issi:{imgs:issiImgs,idx:issiIdx},nice:{imgs:niceImgs,idx:niceIdx},epsc:{imgs:epscImgs,idx:epscIdx},symp:{imgs:sympImgs,idx:sympIdx},deeps:{imgs:deepsImgs,idx:deepsIdx},bern:{imgs:bernImgs,idx:bernIdx}};
+    const stateKey={mollky:'mollkyIdx',issi:'issiIdx',nice:'niceIdx',epsc:'epscIdx',symp:'sympIdx',deeps:'deepsIdx',bern:'bernIdx'};
+    const which=this.state.lightboxWhich||null;
+    let lightboxSrc='assets/fun-1.jpg';
+    if(which==='fun1') lightboxSrc='assets/fun-1.jpg';
+    else if(which && sets[which]) lightboxSrc=sets[which].imgs[sets[which].idx];
+    const lbNav=(dir)=>(e)=>{
+      if(e && e.stopPropagation) e.stopPropagation();
+      const k=stateKey[which]; if(!k) return;
+      const len=sets[which].imgs.length;
+      this.setState(s=>({[k]:(((s[k]||0)+dir)+len)%len}));
+    };
+    return {
+      mollkySrc: imgs[idx],
+      mollkyPrev: ()=>this.setState(s=>({mollkyIdx:(((s.mollkyIdx||0)-1)+imgs.length)%imgs.length})),
+      mollkyNext: ()=>this.setState(s=>({mollkyIdx:(((s.mollkyIdx||0)+1))%imgs.length})),
+      mollkyOpen: ()=>this.setState({lightboxWhich:'mollky'}),
+      issiSrc: issiImgs[issiIdx],
+      issiPrev: ()=>this.setState(s=>({issiIdx:(((s.issiIdx||0)-1)+issiImgs.length)%issiImgs.length})),
+      issiNext: ()=>this.setState(s=>({issiIdx:(((s.issiIdx||0)+1))%issiImgs.length})),
+      issiOpen: ()=>this.setState({lightboxWhich:'issi'}),
+      niceSrc: niceImgs[niceIdx],
+      nicePrev: ()=>this.setState(s=>({niceIdx:(((s.niceIdx||0)-1)+niceImgs.length)%niceImgs.length})),
+      niceNext: ()=>this.setState(s=>({niceIdx:(((s.niceIdx||0)+1))%niceImgs.length})),
+      niceOpen: ()=>this.setState({lightboxWhich:'nice'}),
+      epscSrc: epscImgs[epscIdx],
+      epscCaption: epscCaps[epscIdx],
+      epscPrev: ()=>this.setState(s=>({epscIdx:(((s.epscIdx||0)-1)+epscImgs.length)%epscImgs.length})),
+      epscNext: ()=>this.setState(s=>({epscIdx:(((s.epscIdx||0)+1))%epscImgs.length})),
+      epscOpen: ()=>this.setState({lightboxWhich:'epsc'}),
+      sympSrc: sympImgs[sympIdx],
+      sympCaption: sympCaps[sympIdx],
+      sympPrev: ()=>this.setState(s=>({sympIdx:(((s.sympIdx||0)-1)+sympImgs.length)%sympImgs.length})),
+      sympNext: ()=>this.setState(s=>({sympIdx:(((s.sympIdx||0)+1))%sympImgs.length})),
+      sympOpen: ()=>this.setState({lightboxWhich:'symp'}),
+      deepsSrc: deepsImgs[deepsIdx],
+      deepsCaption: deepsCaps[deepsIdx],
+      deepsPrev: ()=>this.setState(s=>({deepsIdx:(((s.deepsIdx||0)-1)+deepsImgs.length)%deepsImgs.length})),
+      deepsNext: ()=>this.setState(s=>({deepsIdx:(((s.deepsIdx||0)+1))%deepsImgs.length})),
+      deepsOpen: ()=>this.setState({lightboxWhich:'deeps'}),
+      bernSrc: bernImgs[bernIdx],
+      bernPrev: ()=>this.setState(s=>({bernIdx:(((s.bernIdx||0)-1)+bernImgs.length)%bernImgs.length})),
+      bernNext: ()=>this.setState(s=>({bernIdx:(((s.bernIdx||0)+1))%bernImgs.length})),
+      bernOpen: ()=>this.setState({lightboxWhich:'bern'}),
+      fun1Open: ()=>this.setState({lightboxWhich:'fun1'}),
+      lightboxSrc,
+      lightboxOverlayStyle: 'position:fixed;inset:0;z-index:200;background:rgba(5,5,8,.88);display:'+(which?'flex':'none')+';align-items:center;justify-content:center;padding:40px;cursor:zoom-out',
+      lightboxOpen: !!which,
+      lightboxShowArrows: !!which && which!=='fun1',
+      lightboxPrev: lbNav(-1),
+      lightboxNext: lbNav(1),
+      closeLightbox: ()=>this.setState({lightboxWhich:null})
+    };
+  }
+}
+</script>
+</body>
+</html>

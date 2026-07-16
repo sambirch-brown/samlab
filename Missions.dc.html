@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#07070a;font-family:'Figtree',sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  @keyframes dvtwinkle{0%,100%{opacity:.15}50%{opacity:.95}}
+</style>
+</helmet>
+
+<div style="color:#f2ede3;position:relative">
+  <div data-stars style="position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden"></div>
+
+  <!-- ================= STICKY NAV ================= -->
+  <nav style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:15px 40px;background:rgba(7,7,10,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)">
+    <a href="index.html" style="display:flex;flex-direction:column;line-height:1">
+      <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#f7f2e8">geomorph<span style="color:#e6a94a">@</span>Brown</span>
+      <span style="font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:#c9b89b;margin-top:4px">The SAMLAB</span>
+    </a>
+    <div style="display:flex;gap:22px;font-size:13px;font-weight:500;color:#c8bfae">
+      <a href="index.html" style="transition:color .2s" style-hover="color:#fff">Home</a>
+      <a href="Team.dc.html" style="transition:color .2s" style-hover="color:#fff">Team</a>
+      <a href="Research.dc.html" style="transition:color .2s" style-hover="color:#fff">Research</a>
+      <a href="Publications.dc.html" style="transition:color .2s" style-hover="color:#fff">Publications</a>
+      <a href="Missions.dc.html" style="color:#e6a94a">Mission Support</a>
+      <a href="Data.dc.html" style="transition:color .2s" style-hover="color:#fff">Data &amp; Code</a>
+      <a href="Media.dc.html" style="transition:color .2s" style-hover="color:#fff">Media</a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header style="position:relative;overflow:hidden;padding:clamp(90px,13vw,150px) 40px clamp(20px,3vw,40px);text-align:center">
+    <div style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(40px,6vw,72px);line-height:1.03;margin:0 0 20px;color:#f9f4ea">Supporting active spacecraft <span style="color:#e6a94a;font-style:italic">exploration</span></div>
+    <p style="font-size:clamp(16px,1.6vw,19px);line-height:1.7;color:#a49e91;margin:0 auto;max-width:58rem">As planetary scientists, access to data is almost exclusively limited to spacecraft. Participation in the operations and development of these missions is a large — and exciting — part of our research. Seeing a new world that no one in human history has seen is such a thrill.</p>
+  </header>
+
+  <!-- ================= DRAGONFLY (featured) ================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(30px,4vw,50px) 40px 20px">
+    <div data-reveal style="display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,56px);align-items:center;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:26px;padding:clamp(24px,3vw,40px);overflow:hidden">
+      <div style="flex:1 1 340px;min-width:280px;position:relative">
+        <img src="assets/dragonfly_flight.png" alt="Dragonfly over Titan" loading="lazy" style="width:100%;border-radius:16px;display:block;box-shadow:0 20px 50px rgba(0,0,0,.5)">
+      </div>
+      <div style="flex:1 1 340px;min-width:280px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+          <span style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#0c1a12;background:#5cbb81;padding:4px 11px;border-radius:30px">Active</span>
+          <span style="font-size:12.5px;color:#8a8172;letter-spacing:.04em">Affiliate · 2019 – Present</span>
+        </div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(30px,3.4vw,44px);margin:0 0 14px;color:#f2ede3">Dragonfly</h2>
+        <p style="font-size:15.5px;line-height:1.7;color:#a49e91;margin:0 0 20px">Dragonfly is an aerial lander that will fly through Titan's atmosphere and land at multiple locations on its surface in the mid-2030s. The mission will explore diverse sites to characterize the habitability of Titan's environment, investigate how far prebiotic chemistry has progressed, and even search for chemical signatures of water- or hydrocarbon-based life.</p>
+        <a href="https://dragonfly.jhuapl.edu/" target="_blank" rel="noopener" style="display:inline-block;font-size:13px;padding:9px 18px;border:1px solid rgba(230,169,74,.45);border-radius:30px;color:#e6a94a;transition:background .2s" style-hover="background:rgba(230,169,74,.15)">Mission site ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OTHER MISSIONS ================= -->
+  <section style="max-width:1180px;margin:0 auto;padding:clamp(20px,3vw,30px) 40px clamp(60px,7vw,90px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px">
+
+      <div data-reveal style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:32px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+          <span style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#0c1a12;background:#5cbb81;padding:4px 11px;border-radius:30px">Active</span>
+          <span style="font-size:12px;color:#8a8172">Co-Investigator · 2015 – Present</span>
+        </div>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:26px;margin:0 0 12px;color:#f2ede3">CAESAR</h3>
+        <p style="font-size:15px;line-height:1.65;color:#a49e91;margin:0 0 18px">A comet sample-return mission proposed for NASA's New Frontiers program and being re-proposed for NF5. CAESAR would return to comet 67P and sample its surface — ground-truthing decades of cometary research, with cameras that reveal how these small worlds evolve.</p>
+        <a href="http://caesar.cornell.edu/" target="_blank" rel="noopener" style="display:inline-block;font-size:12.5px;padding:8px 16px;border:1px solid rgba(230,169,74,.45);border-radius:30px;color:#e6a94a;transition:background .2s" style-hover="background:rgba(230,169,74,.15)">Mission site ↗</a>
+      </div>
+
+      <div data-reveal style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:32px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+          <span style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#cabfa9;background:rgba(255,255,255,.08);padding:4px 11px;border-radius:30px">Concept</span>
+          <span style="font-size:12px;color:#8a8172">Associate Team Member · 2020 – 2022</span>
+        </div>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:26px;margin:0 0 12px;color:#f2ede3">Trident</h3>
+        <p style="font-size:15px;line-height:1.65;color:#a49e91;margin:0">A mission concept — not ultimately selected for NASA's Discovery program — that would have flown by Neptune's moon Triton, a world that may host a subsurface ocean and was seen by Voyager 2 spewing plumes hundreds of kilometers high. Trident would have imaged nearly all of Triton's surface far better than Voyager 2, and searched for that hidden ocean.</p>
+      </div>
+
+      <div data-reveal style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:32px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+          <span style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#cabfa9;background:rgba(255,255,255,.08);padding:4px 11px;border-radius:30px">Past</span>
+          <span style="font-size:12px;color:#8a8172">Grad Student Collaborator · 2017 – 2019</span>
+        </div>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:26px;margin:0 0 12px;color:#f2ede3">Rosetta · OSIRIS</h3>
+        <p style="font-size:15px;line-height:1.65;color:#a49e91;margin:0">Rosetta made the first rendezvous with a comet, orbiting 67P for over 2.5 years. Its spectacular dataset transformed our understanding of these small icy worlds and lit a clear path for the next generation of comet science.</p>
+      </div>
+
+      <div data-reveal style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:32px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+          <span style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#cabfa9;background:rgba(255,255,255,.08);padding:4px 11px;border-radius:30px">Past</span>
+          <span style="font-size:12px;color:#8a8172">Co-Investigator · 2016 – 2019</span>
+        </div>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:26px;margin:0 0 12px;color:#f2ede3">Oceanus</h3>
+        <p style="font-size:15px;line-height:1.65;color:#a49e91;margin:0">A Titan orbiter concept proposed for NASA's New Frontiers program, led by JPL. Oceanus would have mapped Titan's seas and lakes with radar altimetry, sampled its rich atmosphere, and searched for the ingredients of life in its subsurface ocean and organic chemistry.</p>
+      </div>
+
+      <div data-reveal style="background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:32px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+          <span style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#cabfa9;background:rgba(255,255,255,.08);padding:4px 11px;border-radius:30px">Past</span>
+          <span style="font-size:12px;color:#8a8172">Associate Team Member · 2016 – 2019</span>
+        </div>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:26px;margin:0 0 12px;color:#f2ede3">Cassini RADAR Team</h3>
+        <p style="font-size:15px;line-height:1.65;color:#a49e91;margin:0">Cassini orbited Saturn for 14 years, making 127 flybys of its largest moon, Titan. Its RADAR peered beneath Titan's thick atmosphere to reveal the most fascinating world we've yet discovered — a mission Sam was fortunate to join during his PhD.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="background:#050506;color:#c8bfae;padding:54px 40px 40px;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;line-height:1">
+        <span style="font-family:'Newsreader',serif;font-size:23px;color:#f7f2e8">geomorph@Brown</span>
+        <span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#8a8172;margin-top:7px">The SAMLAB</span>
+        <span style="font-size:13px;color:#8a8172;margin-top:18px;max-width:24rem;line-height:1.6">Dept. of Earth, Environmental &amp; Planetary Sciences<br>Brown University · Providence, RI</span>
+      </div>
+      <div style="display:flex;gap:60px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f6653;margin-bottom:4px">Explore</span>
+          <a href="Research.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Research</a>
+          <a href="Publications.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Publications</a>
+          <a href="Missions.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Mission Support</a>
+          <a href="Data.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Data &amp; Code</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f6653;margin-bottom:4px">More</span>
+          <a href="Team.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Our Team</a>
+          <a href="Media.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Media</a>
+          <a href="https://scholar.google.com/citations?hl=en&amp;view_op=list_works&amp;gmla=AOv-ny-dkiCg-0fwuEZHpTbY7lLzyBVX9015tVyl4bmSh2BSZbxY0FMsXRX_OXPCNogkOBVWGHl8ycomfGSccnQ-nI9CcRXvX_0u9KiE9XYp&amp;user=Ly6Ak6oAAAAJ" target="_blank" rel="noopener" style="transition:color .2s" style-hover="color:#e6a94a">Google Scholar</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:38px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:#6f6653">© <span data-year>2026</span> The SAMLAB · geomorph@Brown</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ this._raf = requestAnimationFrame(() => this._init()); }
+  componentWillUnmount(){ if (this._ro) this._ro.disconnect(); if (this._raf) cancelAnimationFrame(this._raf); }
+  _init(){
+    if (this._done) return; this._done = true;
+    const yr = document.querySelector('[data-year]'); if (yr) yr.textContent = new Date().getFullYear();
+    this._makeStars();
+    const reveals = [...document.querySelectorAll('[data-reveal]')];
+    reveals.forEach((el) => { el.style.opacity = '0'; el.style.transform = 'translateY(26px)'; el.style.transition = 'opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)'; });
+    this._ro = new IntersectionObserver((es) => {
+      es.forEach((e) => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'none'; this._ro.unobserve(e.target); } });
+    }, { root: null, rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    reveals.forEach((el) => this._ro.observe(el));
+  }
+  _makeStars(){
+    const cs=[...document.querySelectorAll('[data-stars]')];
+    cs.forEach((c)=>{
+      const r=c.getBoundingClientRect();
+      const n=Math.min(170,Math.max(50,Math.round((r.width*r.height)/9000)));
+      let h='';
+      for(let i=0;i<n;i++){
+        const s=(Math.random()*2+1).toFixed(1);
+        h+='<span style="position:absolute;left:'+(Math.random()*100).toFixed(2)+'%;top:'+(Math.random()*100).toFixed(2)+'%;width:'+s+'px;height:'+s+'px;border-radius:50%;background:#fff;opacity:0;animation:dvtwinkle '+(Math.random()*5+3).toFixed(2)+'s ease-in-out '+(Math.random()*7).toFixed(2)+'s infinite"></span>';
+      }
+      c.innerHTML=h;
+    });
+  }
+  renderVals(){ return {}; }
+}
+</script>
+</body>
+</html>

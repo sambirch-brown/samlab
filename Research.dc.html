@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#07070a;font-family:'Figtree',sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  @keyframes dvtwinkle{0%,100%{opacity:.15}50%{opacity:.95}}
+</style>
+</helmet>
+
+<div style="color:#f2ede3;position:relative">
+  <div data-stars style="position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden"></div>
+
+  <!-- ================= STICKY NAV ================= -->
+  <nav style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:15px 40px;background:rgba(7,7,10,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)">
+    <a href="index.html" style="display:flex;flex-direction:column;line-height:1">
+      <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:500;color:#f7f2e8">geomorph<span style="color:#e6a94a">@</span>Brown</span>
+      <span style="font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:#c9b89b;margin-top:4px">The SAMLAB</span>
+    </a>
+    <div style="display:flex;gap:22px;font-size:13px;font-weight:500;color:#c8bfae">
+      <a href="index.html" style="transition:color .2s" style-hover="color:#fff">Home</a>
+      <a href="Team.dc.html" style="transition:color .2s" style-hover="color:#fff">Team</a>
+      <a href="Research.dc.html" style="color:#e6a94a">Research</a>
+      <a href="Publications.dc.html" style="transition:color .2s" style-hover="color:#fff">Publications</a>
+      <a href="Missions.dc.html" style="transition:color .2s" style-hover="color:#fff">Mission Support</a>
+      <a href="Data.dc.html" style="transition:color .2s" style-hover="color:#fff">Data &amp; Code</a>
+      <a href="Media.dc.html" style="transition:color .2s" style-hover="color:#fff">Media</a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header style="position:relative;overflow:hidden;background:#07070a;text-align:center">
+    <div style="position:absolute;top:22%;left:16%;width:2px;height:2px;border-radius:50%;background:#fff;animation:dvtwinkle 3s ease-in-out infinite"></div>
+    <div style="position:absolute;top:36%;left:82%;width:3px;height:3px;border-radius:50%;background:#fff;animation:dvtwinkle 4s ease-in-out .6s infinite"></div>
+    <div style="position:absolute;top:64%;left:26%;width:2px;height:2px;border-radius:50%;background:#fff;animation:dvtwinkle 2.7s ease-in-out .3s infinite"></div>
+    <div style="position:absolute;top:30%;left:54%;width:2px;height:2px;border-radius:50%;background:#fff;animation:dvtwinkle 4.6s ease-in-out .9s infinite"></div>
+    <div style="position:relative;z-index:0">
+      <img src="assets/hydro.png" alt="" loading="lazy" style="display:block;width:100%;height:auto;opacity:.6">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse 72% 96% at 50% 50%,rgba(7,7,10,.3),rgba(7,7,10,.58) 62%,rgba(7,7,10,.9) 100%)"></div>
+    </div>
+    <div style="position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(30px,6vw,80px) 40px">
+      <div style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(40px,6vw,72px);line-height:1.03;margin:0;color:#f9f4ea;text-shadow:0 2px 16px rgba(0,0,0,.85)">What do we work on in the <span style="color:#e6a94a;font-style:italic">SAMLAB</span>?</div>
+      <p style="font-size:clamp(16px,1.6vw,19px);line-height:1.7;color:#cfc8ba;margin:18px auto 0;max-width:44rem;text-shadow:0 2px 12px rgba(0,0,0,.9)">We work on lots of solar system worlds, from rocky planets out to the iciest, coldest parts of the outer solar system</p>
+    </div>
+  </header>
+
+  <!-- ================= INTRO / ETHOS ================= -->
+  <section style="max-width:52rem;margin:0 auto;padding:10px 40px clamp(30px,5vw,50px)">
+    <p data-reveal style="font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">Spacecraft exploration of our solar system has revealed a great diversity of planetary surfaces. Throughout the solar system, we have discovered process both familiar to those here on Earth but also very new process that are typically not thought of as important in terrestrial geomorphology. From the arid, ancient landscapes of Mars, to Titan's active rivers and climate, to the massive nitrogen glaciers of Pluto, each of these worlds provide us a unique opportunity to study how climate governs the long-term development of landscapes.</p>
+    <p data-reveal style="font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">So how do we fit in? Broadly, our research group seeks to understand the full suite of processes responsible for shaping planetary surfaces and climates, leveraging this broad spectrum of environmental, mechanical, and chemical differences that we find across our solar system. And we don't want to just stop there. The ultimate aim is to then take what we learn from these various planetary worlds, and use some of that knowledge to better understand what's happening here on Earth, either today or in the distant past!</p>
+    <p data-reveal style="position:relative;font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">Much of our work to date has attempted to unravel the landforms on both Saturn's largest moon Titan and the Jupiter Family Comet 67P/Churyumov-Gerasimenko (67P). As we can't reasonably restrict ourselves to just two worlds, we also have projects that are looking at the surfaces of Mars, Triton, Europa, Pluto, Earth, and yet more comets; all under the same umbrella of trying understand the <em>full suite</em> of processes responsible for shaping planetary surfaces and climates. We like to think of each of these planetary landscapes as massive, natural experiments, which are freely offering us the chance to observe both the familiar and the alien. <img src="assets/meme-too-many-words.png" alt="" style="position:absolute;left:-180px;top:66%;width:116px;transform:rotate(-25deg);border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.4);pointer-events:none">The beauty of them though is that they are on global scales, compared to the far smaller (and more complex) experiments we experience on Earth. So, while Titan and 67P are each amazing worlds, we also want to explore as many unique environments as time (and resources of course) allows!</p>
+    <p data-reveal style="font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">To answer these many questions, we employ many of the quantitative techniques and methods common to terrestrial geomorphologists. Historically in the planetary sciences, this knowledge has frequently been transferred from Earth to Mars, and our aim is to apply these techniques across the rest of the solar system. These methods include developing simple analytical models, the use of numerical simulations and laboratory studies that allow us to experiment with many processes (both familiar and exotic) over a range of spatial and temporal scales, field work to go and explore different landscapes, and, of course, analyses of new spacecraft data through <a href="Missions.dc.html" style="color:#e6a94a">participation</a> in the operation and development of yet more missions.</p>
+    <p data-reveal style="font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0">Of course, our group and interests are growing. Titan and comets are fascinating worlds, but there is so much else out there for us to explore. Browse below if you want to learn more!</p>
+  </section>
+
+
+  <!-- ================= THEMES ================= -->
+  <!-- 1 Titan Hydrology (image left) -->
+  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+    <div>
+      <img src="assets/ligeia_zoom1.png" alt="Titan hydrology" loading="lazy" style="width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
+      <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">Titan is the only other world with active weather — but its materials are totally alien.</div>
+    </div>
+    <div>
+      
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(26px,3vw,38px);margin:0 0 18px;color:#5cbb81">Titan Hydrology 🌊</h2>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>Where are Titan's river deltas? Should we "expect" them to be there?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>Are there new dynamics at river–sea interfaces we haven't had to consider on Earth?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>Are there new dynamics within Titan's rivers that affect sediment transport and river profiles?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>How do you form Titan's small lakes? How interconnected are they?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>How do fluids move between and within Titan's seas?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2 Comet Surface Evolution (image right) -->
+  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+    <div style="order:2">
+      <img src="assets/01_full_comet_300dpi.jpg" alt="Comet 67P" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
+      <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">Rosetta revealed shockingly Earth-like landscapes on 67P — despite little gravity, no atmosphere, and near-strengthless material.</div>
+    </div>
+    <div>
+      
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(26px,3vw,38px);margin:0 0 18px;color:#e6a94a">Comet Surface Evolution ☄️</h2>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>How does 67P's surface evolve over seasonal timescales? What about geological ones?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>How are ice and dust mixed within 67P, and what does that imply for how cometary "rocks" formed in the protoplanetary disk?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>How is sediment generated, and then transported across 67P?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>Does 67P lose mass rapidly, or gradually? How does cometary activity fade?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>How generalizable is 67P to other comets?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3 River-Dune (image left) -->
+  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+    <div>
+      <img src="assets/river-dune.jpeg" alt="Braided river, Iceland" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
+      <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">We study river–dune morphodynamics at the Namib Sand Sea, then move to Titan — where Dragonfly will land.</div>
+    </div>
+    <div>
+      
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(22px,2.5vw,34px);margin:0 0 18px;color:#5cbb81;white-space:nowrap">River–Dune Morphodynamics 🏖️</h2>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>How do rivers modify dune patterns — and how do dunes modify river morphology and long profiles?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>What do landscapes like the Namib Sand Sea record about global climate patterns?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>How are rivers actively modifying sand sea margins?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>What was the paleoclimate around the Namib, and how did it affect early humans and life?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>Titan has the same exact setup — do its river–dune patterns tell us of a drying world?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 Primitive Volatiles (image right) -->
+  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+    <div style="order:2">
+      <img src="assets/haleycomet.png" alt="Comet activity" loading="lazy" style="width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
+      <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">Cometary activity is being discovered at increasingly large distances from the Sun.</div>
+    </div>
+    <div>
+      
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(26px,3vw,38px);margin:0 0 18px;color:#e6a94a">Primitive Volatile Retention ❄️</h2>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>Can you retain primitive ices like CO over the age of the solar system? If so, how — and where in such objects are ices retained?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>What even is "primitive"? Is any information from the planet-formation era preserved?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>What does this imply for large heliocentric outgassing or interstellar comets?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>Can we predict which ices come off when, for how long, and how much?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>Are there implications for building the large-scale topography on comets?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5 Icy Moon Geophysics (image left) -->
+  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+    <div>
+      <img src="assets/picture1.png" alt="Titan topography" loading="lazy" style="width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
+      <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">Titan's topography (left) appears distinct from all other icy moons (Ganymede, right).</div>
+    </div>
+    <div>
+      
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(26px,3vw,38px);margin:0 0 18px;color:#5cbb81">Icy Moon Geophysics 🧊</h2>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>Why is Titan the only icy world with mountain belts, despite active erosion? What role do clathrates play?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>How does methane make its way through Titan's thick elastic shell?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>How does the inclusion of salts affect the freeze-out rate of ice shells?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#5cbb81"></span>If Titan doesn't have an ocean, how quickly has it frozen out — especially given recent dynamical excitement in the Saturn system?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6 Other Projects (image right) -->
+  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px clamp(60px,7vw,90px)">
+    <div style="order:2">
+      <img src="assets/jezero_hirise.png" alt="Mars — Jezero" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
+      <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">From Mars' softened hillslopes and crater lakes to Venus' canali and new tools for small bodies.</div>
+    </div>
+    <div>
+      
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(26px,3vw,38px);margin:0 0 18px;color:#e6a94a">Mars, Venus &amp; More</h2>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px">
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>What has softened hillslopes on Mars, and what can they tell us about its changing climate?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>What do Mars' river deposits record about changing lake levels? Are we sure we're always looking at deltas?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>What can Venus' canali reveal about how its topography was constructed?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>Like Titan's lakes, how interconnected were Mars' crater lakes through the subsurface?</li>
+        <li style="position:relative;padding-left:20px;font-size:15px;line-height:1.55;color:#a49e91"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#e6a94a"></span>Can we build new tools that permit wider use of data acquired at small bodies?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="background:#050506;color:#c8bfae;padding:54px 40px 40px;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;line-height:1">
+        <span style="font-family:'Newsreader',serif;font-size:23px;color:#f7f2e8">geomorph@Brown</span>
+        <span style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#8a8172;margin-top:7px">The SAMLAB</span>
+        <span style="font-size:13px;color:#8a8172;margin-top:18px;max-width:24rem;line-height:1.6">Dept. of Earth, Environmental &amp; Planetary Sciences<br>Brown University · Providence, RI</span>
+      </div>
+      <div style="display:flex;gap:60px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f6653;margin-bottom:4px">Explore</span>
+          <a href="Research.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Research</a>
+          <a href="Publications.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Publications</a>
+          <a href="Missions.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Mission Support</a>
+          <a href="Data.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Data &amp; Code</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13.5px">
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6f6653;margin-bottom:4px">More</span>
+          <a href="Team.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Our Team</a>
+          <a href="Media.dc.html" style="transition:color .2s" style-hover="color:#e6a94a">Media</a>
+          <a href="https://scholar.google.com/citations?hl=en&amp;view_op=list_works&amp;gmla=AOv-ny-dkiCg-0fwuEZHpTbY7lLzyBVX9015tVyl4bmSh2BSZbxY0FMsXRX_OXPCNogkOBVWGHl8ycomfGSccnQ-nI9CcRXvX_0u9KiE9XYp&amp;user=Ly6Ak6oAAAAJ" target="_blank" rel="noopener" style="transition:color .2s" style-hover="color:#e6a94a">Google Scholar</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:38px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:#6f6653">© <span data-year>2026</span> The SAMLAB · geomorph@Brown</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ this._raf = requestAnimationFrame(() => this._init()); }
+  componentWillUnmount(){ if (this._ro) this._ro.disconnect(); if (this._raf) cancelAnimationFrame(this._raf); }
+  _init(){
+    if (this._done) return; this._done = true;
+    const yr = document.querySelector('[data-year]'); if (yr) yr.textContent = new Date().getFullYear();
+    this._makeStars();
+    const reveals = [...document.querySelectorAll('[data-reveal]')];
+    reveals.forEach((el) => { el.style.opacity = '0'; el.style.transform = 'translateY(26px)'; el.style.transition = 'opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)'; });
+    this._ro = new IntersectionObserver((es) => {
+      es.forEach((e) => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'none'; this._ro.unobserve(e.target); } });
+    }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.06 });
+    reveals.forEach((el) => this._ro.observe(el));
+  }
+  _makeStars(){
+    const cs=[...document.querySelectorAll('[data-stars]')];
+    cs.forEach((c)=>{
+      const r=c.getBoundingClientRect();
+      const n=Math.min(170,Math.max(50,Math.round((r.width*r.height)/8000)));
+      let h='';
+      for(let i=0;i<n;i++){
+        const s=(Math.random()*2+1).toFixed(1);
+        h+='<span style="position:absolute;left:'+(Math.random()*100).toFixed(2)+'%;top:'+(Math.random()*100).toFixed(2)+'%;width:'+s+'px;height:'+s+'px;border-radius:50%;background:#fff;opacity:0;animation:dvtwinkle '+(Math.random()*5+3).toFixed(2)+'s ease-in-out '+(Math.random()*7).toFixed(2)+'s infinite"></span>';
+      }
+      c.innerHTML=h;
+    });
+  }
+  renderVals(){ return {}; }
+}
+</script>
+</body>
+</html>
