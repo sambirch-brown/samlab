@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The SAMLAB — Planetary Geomorphology at Brown University</title>
+<meta name="description" content="Sam Birch's research group at Brown University studies planetary landscapes — from Titan's rivers to comet 67P — through data, models, laboratory experiments, and field work.">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -18,6 +20,16 @@
   body{margin:0;background:#07070a;font-family:'Figtree',sans-serif;-webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
   @keyframes dvtwinkle{0%,100%{opacity:.15}50%{opacity:.95}}
+  body{overflow-x:hidden}
+  @media (max-width:900px){
+    nav{flex-wrap:wrap;justify-content:center!important;row-gap:10px;padding:12px 20px!important}
+    nav>div{flex-wrap:wrap;justify-content:center!important;gap:8px 16px!important;font-size:11.5px!important}
+  }
+  @media (max-width:760px){
+    div[style*="min-height:88vh"]{flex-direction:column!important;min-height:auto!important;padding-top:60px!important;padding-bottom:60px!important;row-gap:32px!important}
+    div[style*="width:clamp(440px,66vh,820px)"]{width:min(74vw,300px)!important;height:min(74vw,300px)!important}
+    div[style*="z-index:5;top:38%;left:5%"],div[style*="z-index:5;top:53%;right:6%"],div[style*="z-index:5;top:80%;left:18%"],div[style*="z-index:5;top:77%;right:14%"],div[style*="z-index:5;top:45%;left:46%"]{display:none!important}
+  }
   @keyframes dvcue{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(8px);opacity:1}}
   @keyframes dvfloatlogo{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
   @keyframes cometfly{0%{transform:translateX(-118vw) translateY(0) rotate(-14deg);opacity:0}7%{opacity:1}88%{opacity:.95}100%{transform:translateX(120vw) translateY(8vh) rotate(-14deg);opacity:0}}
