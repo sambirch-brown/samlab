@@ -26,9 +26,9 @@
     nav>div{flex-wrap:wrap;justify-content:center!important;gap:8px 16px!important;font-size:11.5px!important}
   }
   @media (max-width:760px){
-    div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
-    div[style*="order:2"]{order:0!important}
-    header[style*="background:#07070a;text-align:center"]{min-height:480px}
+    [data-mgrid]{grid-template-columns:1fr!important}
+    [data-mhead]{min-height:520px!important}
+    [data-mmeme]{display:none!important}
   }
 </style>
 </helmet>
@@ -54,7 +54,7 @@
   </nav>
 
   <!-- ================= HERO ================= -->
-  <header style="position:relative;overflow:hidden;background:#07070a;text-align:center">
+  <header data-mhead style="position:relative;overflow:hidden;background:#07070a;text-align:center">
     <div style="position:absolute;top:22%;left:16%;width:2px;height:2px;border-radius:50%;background:#fff;animation:dvtwinkle 3s ease-in-out infinite"></div>
     <div style="position:absolute;top:36%;left:82%;width:3px;height:3px;border-radius:50%;background:#fff;animation:dvtwinkle 4s ease-in-out .6s infinite"></div>
     <div style="position:absolute;top:64%;left:26%;width:2px;height:2px;border-radius:50%;background:#fff;animation:dvtwinkle 2.7s ease-in-out .3s infinite"></div>
@@ -73,7 +73,7 @@
   <section style="max-width:52rem;margin:0 auto;padding:10px 40px clamp(30px,5vw,50px)">
     <p data-reveal style="font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">Spacecraft exploration of our solar system has revealed a great diversity of planetary surfaces. Throughout the solar system, we have discovered process both familiar to those here on Earth but also very new process that are typically not thought of as important in terrestrial geomorphology. From the arid, ancient landscapes of Mars, to Titan's active rivers and climate, to the massive nitrogen glaciers of Pluto, each of these worlds provide us a unique opportunity to study how climate governs the long-term development of landscapes.</p>
     <p data-reveal style="font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">So how do we fit in? Broadly, our research group seeks to understand the full suite of processes responsible for shaping planetary surfaces and climates, leveraging this broad spectrum of environmental, mechanical, and chemical differences that we find across our solar system. And we don't want to just stop there. The ultimate aim is to then take what we learn from these various planetary worlds, and use some of that knowledge to better understand what's happening here on Earth, either today or in the distant past!</p>
-    <p data-reveal style="position:relative;font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">Much of our work to date has attempted to unravel the landforms on both Saturn's largest moon Titan and the Jupiter Family Comet 67P/Churyumov-Gerasimenko (67P). As we can't reasonably restrict ourselves to just two worlds, we also have projects that are looking at the surfaces of Mars, Triton, Europa, Pluto, Earth, and yet more comets; all under the same umbrella of trying understand the <em>full suite</em> of processes responsible for shaping planetary surfaces and climates. We like to think of each of these planetary landscapes as massive, natural experiments, which are freely offering us the chance to observe both the familiar and the alien. <img src="assets/meme-too-many-words.png" alt="" style="position:absolute;left:-180px;top:66%;width:116px;transform:rotate(-25deg);border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.4);pointer-events:none">The beauty of them though is that they are on global scales, compared to the far smaller (and more complex) experiments we experience on Earth. So, while Titan and 67P are each amazing worlds, we also want to explore as many unique environments as time (and resources of course) allows!</p>
+    <p data-reveal style="position:relative;font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">Much of our work to date has attempted to unravel the landforms on both Saturn's largest moon Titan and the Jupiter Family Comet 67P/Churyumov-Gerasimenko (67P). As we can't reasonably restrict ourselves to just two worlds, we also have projects that are looking at the surfaces of Mars, Triton, Europa, Pluto, Earth, and yet more comets; all under the same umbrella of trying understand the <em>full suite</em> of processes responsible for shaping planetary surfaces and climates. We like to think of each of these planetary landscapes as massive, natural experiments, which are freely offering us the chance to observe both the familiar and the alien. <img data-mmeme src="assets/meme-too-many-words.png" alt="" style="position:absolute;left:-180px;top:66%;width:116px;transform:rotate(-25deg);border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.4);pointer-events:none">The beauty of them though is that they are on global scales, compared to the far smaller (and more complex) experiments we experience on Earth. So, while Titan and 67P are each amazing worlds, we also want to explore as many unique environments as time (and resources of course) allows!</p>
     <p data-reveal style="font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0 0 22px">To answer these many questions, we employ many of the quantitative techniques and methods common to terrestrial geomorphologists. Historically in the planetary sciences, this knowledge has frequently been transferred from Earth to Mars, and our aim is to apply these techniques across the rest of the solar system. These methods include developing simple analytical models, the use of numerical simulations and laboratory studies that allow us to experiment with many processes (both familiar and exotic) over a range of spatial and temporal scales, field work to go and explore different landscapes, and, of course, analyses of new spacecraft data through <a href="Missions.dc.html" style="color:#e6a94a">participation</a> in the operation and development of yet more missions.</p>
     <p data-reveal style="font-size:clamp(16px,1.5vw,18.5px);line-height:1.72;color:#c3bcae;margin:0">Of course, our group and interests are growing. Titan and comets are fascinating worlds, but there is so much else out there for us to explore. Browse below if you want to learn more!</p>
   </section>
@@ -81,7 +81,7 @@
 
   <!-- ================= THEMES ================= -->
   <!-- 1 Titan Hydrology (image left) -->
-  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+  <section data-mgrid data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
     <div>
       <img src="assets/ligeia_zoom1.png" alt="Titan hydrology" loading="lazy" style="width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
       <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">Titan is the only other world with active weather — but its materials are totally alien.</div>
@@ -100,7 +100,7 @@
   </section>
 
   <!-- 2 Comet Surface Evolution (image right) -->
-  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+  <section data-mgrid data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
     <div style="order:2">
       <img src="assets/01_full_comet_300dpi.jpg" alt="Comet 67P" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
       <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">Rosetta revealed shockingly Earth-like landscapes on 67P — despite little gravity, no atmosphere, and near-strengthless material.</div>
@@ -119,7 +119,7 @@
   </section>
 
   <!-- 3 River-Dune (image left) -->
-  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+  <section data-mgrid data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
     <div>
       <img src="assets/river-dune.jpeg" alt="Braided river, Iceland" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
       <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">We study river–dune morphodynamics at the Namib Sand Sea, then move to Titan — where Dragonfly will land.</div>
@@ -138,7 +138,7 @@
   </section>
 
   <!-- 4 Primitive Volatiles (image right) -->
-  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+  <section data-mgrid data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
     <div style="order:2">
       <img src="assets/haleycomet.png" alt="Comet activity" loading="lazy" style="width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
       <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">Cometary activity is being discovered at increasingly large distances from the Sun.</div>
@@ -157,7 +157,7 @@
   </section>
 
   <!-- 5 Icy Moon Geophysics (image left) -->
-  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
+  <section data-mgrid data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px">
     <div>
       <img src="assets/picture1.png" alt="Titan topography" loading="lazy" style="width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
       <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">Titan's topography (left) appears distinct from all other icy moons (Ganymede, right).</div>
@@ -175,7 +175,7 @@
   </section>
 
   <!-- 6 Other Projects (image right) -->
-  <section data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px clamp(60px,7vw,90px)">
+  <section data-mgrid data-reveal style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start;max-width:1180px;margin:0 auto;padding:clamp(36px,5vw,64px) 40px clamp(60px,7vw,90px)">
     <div style="order:2">
       <img src="assets/jezero_hirise.png" alt="Mars — Jezero" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.5);display:block">
       <div style="font-size:12.5px;color:#8a8172;margin-top:12px;line-height:1.5;font-style:italic">From Mars' softened hillslopes and crater lakes to Venus' canali and new tools for small bodies.</div>

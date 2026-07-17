@@ -26,10 +26,12 @@
     nav>div{flex-wrap:wrap;justify-content:center!important;gap:8px 16px!important;font-size:11.5px!important}
   }
   @media (max-width:760px){
-    [data-mhero]{flex-direction:column!important;min-height:auto!important;padding-top:60px!important;padding-bottom:60px!important;row-gap:32px!important}
-    [data-mcircle]{width:min(74vw,300px)!important;height:min(74vw,300px)!important}
+    [data-mhero]{flex-direction:column!important;min-height:auto!important;padding-top:56px!important;padding-bottom:56px!important;row-gap:28px!important;align-items:center!important}
+    [data-mhero]>div:not([data-mcircle]){width:100%!important;max-width:100%!important;min-width:0!important;flex:none!important}
+    [data-mcircle]{order:-1!important;width:min(72vw,300px)!important;height:min(72vw,300px)!important;flex:none!important}
     [data-mexp] svg{display:none!important}
     [data-mexp] p{max-width:100%!important}
+    [data-mcta]{white-space:normal!important}
   }
   @keyframes dvcue{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(8px);opacity:1}}
   @keyframes dvfloatlogo{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
@@ -263,7 +265,7 @@
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,7,10,.72),rgba(7,7,10,.86))"></div>
     <div data-reveal="" style="position:relative;max-width:44rem;margin:0 auto;text-align:center;padding:clamp(80px,12vw,130px) 40px;color:#f7f2e8">
       
-      <h2 style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(28px,3.6vw,44px);line-height:1.06;white-space:nowrap;margin:0 0 20px;color:#e6a94a;text-shadow:0 2px 24px rgba(0,0,0,.5)">Come explore new worlds with us</h2>
+      <h2 data-mcta style="font-family:'Newsreader',serif;font-weight:400;font-size:clamp(28px,3.6vw,44px);line-height:1.06;white-space:nowrap;margin:0 0 20px;color:#e6a94a;text-shadow:0 2px 24px rgba(0,0,0,.5)">Come explore new worlds with us</h2>
       <p style="font-size:clamp(16px,1.7vw,19px);line-height:1.65;color:#e3dccc;margin:0 auto 32px;max-width:34rem">We love working with curious people. If you're a prospective student, postdoc, or collaborator excited about planetary landscapes, we'd love to hear from you.</p>
       <a href="mailto:sambirch@brown.edu" style="display:inline-block;background:#e6a94a;color:#211b14;padding:15px 32px;border-radius:3px;font-size:14.5px;font-weight:700;transition:transform .2s" style-hover="transform:translateY(-2px)">Get in touch →</a>
     </div>
