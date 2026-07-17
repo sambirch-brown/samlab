@@ -339,7 +339,7 @@ class Component extends DCLogic {
     const cs=[...document.querySelectorAll('[data-stars]')];
     cs.forEach((c)=>{
       const r=c.getBoundingClientRect();
-      const n=Math.min(150,Math.max(45,Math.round((r.width*r.height)/8500)));
+      const n=Math.min(155,Math.max(45,Math.round((r.width*r.height)/8500)));
       let h='';
       for(let i=0;i<n;i++){
         const s=(Math.random()*2+1).toFixed(1);
